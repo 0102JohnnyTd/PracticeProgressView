@@ -14,10 +14,12 @@ final class ViewController: UIViewController {
 
     @IBAction private func didTapPlusButton(_ sender: Any) {
         counter.increment()
+        countProgressView.setProgress(countProgressView.progress + 0.1, animated: true)
     }
 
     @IBAction private func didTapMinusButton(_ sender: Any) {
         counter.decrement()
+        countProgressView.setProgress(countProgressView.progress - 0.1, animated: true)
     }
 
     private let counter = Counter()
