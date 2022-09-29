@@ -13,9 +13,11 @@ final class ViewController: UIViewController {
     @IBOutlet private weak var countProgressView: UIProgressView!
 
     @IBAction private func didTapPlusButton(_ sender: Any) {
+        counter.increment()
     }
 
     @IBAction private func didTapMinusButton(_ sender: Any) {
+        counter.decrement()
     }
 
     private let counter = Counter()
