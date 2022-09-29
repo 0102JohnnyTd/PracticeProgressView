@@ -22,5 +22,12 @@ final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        counter.delegate = self
+    }
+}
+
+extension ViewController: CounterDelegate {
+    func didChangeCount() {
+        <#code#>
     }
 }
