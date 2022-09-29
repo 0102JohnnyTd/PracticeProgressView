@@ -18,6 +18,8 @@ final class ViewController: UIViewController {
     @IBAction private func didTapMinusButton(_ sender: Any) {
     }
 
+    private let counter = Counter()
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
