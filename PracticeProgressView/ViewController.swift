@@ -25,6 +25,11 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         counter.delegate = self
+        setUpProgressView()
+    }
+
+    private func setUpProgressView() {
+        countProgressView.progress = 0
     }
 
     private func updateCountLabel() {
