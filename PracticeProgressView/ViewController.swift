@@ -24,10 +24,14 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
         counter.delegate = self
     }
+
+    private func updateCountLabel() {
+        countLabel.text = String(counter.count) + " / " + "10"
+    }
 }
 
 extension ViewController: CounterDelegate {
     func didChangeCount() {
-        <#code#>
+        updateCountLabel()
     }
 }
